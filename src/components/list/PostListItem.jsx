@@ -2,18 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  width: calc(100%-32px);
+  width: calc(100% - 32px); // 여기 띄어쓰기 꼭 주의할 것.
   padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: content;
+  justify-content: center;
   border: 1px solid grey;
   border-radius: 8px;
   cursor: pointer;
   background: white;
   :hover {
-    background: lightgray;
+    background: lightgrey;
   }
 `;
 

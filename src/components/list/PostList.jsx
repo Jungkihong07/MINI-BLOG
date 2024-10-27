@@ -8,10 +8,8 @@ const Wrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
 
-  & > * {
-    :not(:last-child) {
-      margin-bottom: 16px;
-    }
+  :not(:last-child) {
+    margin-bottom: 16px;
   }
 `;
 function PostList(props) {
@@ -19,7 +17,7 @@ function PostList(props) {
 
   return (
     <Wrapper>
-      {posts.map((post, map) => {
+      {posts.map((post, index) => {
         return (
           <PostListItem
             key={post.id}
